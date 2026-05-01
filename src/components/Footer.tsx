@@ -79,6 +79,12 @@ export default function Footer() {
                 More
               </span>
               <a
+                href="/pricing"
+                className="text-[#78695f] hover:text-[#c9a84c] text-xs tracking-wide transition-colors"
+              >
+                Pricing
+              </a>
+              <a
                 href="#get-in-touch"
                 className="text-[#78695f] hover:text-[#c9a84c] text-xs tracking-wide transition-colors"
               >

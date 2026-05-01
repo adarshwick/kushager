@@ -148,6 +148,17 @@ export default function Navbar() {
           </a>
 
           <a
+            href="/pricing"
+            className={`text-sm tracking-wide px-3 py-2 rounded-lg transition-colors duration-200 ${
+              pathname === "/pricing"
+                ? "text-[#9a6e1a] font-medium"
+                : "text-[#6b5c50] hover:text-[#9a6e1a]"
+            }`}
+          >
+            Pricing
+          </a>
+
+          <a
             href={`${p}#get-in-touch`}
             className="text-[#6b5c50] hover:text-[#9a6e1a] text-sm tracking-wide px-3 py-2 rounded-lg transition-colors duration-200"
           >
@@ -243,6 +254,18 @@ export default function Navbar() {
                 }`}
               >
                 Publications
+              </a>
+
+              <a
+                href="/pricing"
+                onClick={() => setMenuOpen(false)}
+                className={`text-sm tracking-wide py-3 border-b border-[#f0ebe3] ${
+                  pathname === "/pricing"
+                    ? "text-[#9a6e1a] font-medium"
+                    : "text-[#6b5c50]"
+                }`}
+              >
+                Pricing
               </a>
 
               <a
