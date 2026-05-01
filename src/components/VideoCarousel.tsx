@@ -143,7 +143,7 @@ function VideoCard({ review, index, onClick }: { review: VideoReview; index: num
       <div className="p-5 flex flex-col flex-1">
         <div className="flex-1">
           <p className="text-[#1c1917] font-bold text-sm leading-snug">{review.reviewerName}</p>
-          <p className="text-[#78695f] text-xs mt-0.5 leading-snug">{review.reviewerTitle}</p>
+          <p className="text-[#4a3f38] text-xs mt-0.5 leading-snug">{review.reviewerTitle}</p>
         </div>
         <p className="text-[#9a6e1a] text-xs mt-4 flex items-center gap-1.5 font-medium">
           <Play size={9} fill="currentColor" className="flex-shrink-0" />
@@ -174,14 +174,14 @@ function TextCard({ review, index }: { review: TextReview; index: number }) {
 
       <Quote size={26} className="text-[#9a6e1a]/25 mb-4 flex-shrink-0" strokeWidth={1} />
 
-      <blockquote className="text-[#6b5c50] text-sm leading-relaxed italic flex-1 mb-5">
+      <blockquote className="text-[#1c1917] text-sm leading-relaxed italic flex-1 mb-5">
         &ldquo;{review.quote}&rdquo;
       </blockquote>
 
       <div className="mt-auto">
         <div className="w-8 h-px bg-[#9a6e1a]/30 mb-3" />
         <p className="text-[#1c1917] text-sm font-semibold leading-snug">{review.reviewerName}</p>
-        <p className="text-[#78695f] text-xs mt-0.5 leading-snug">{review.reviewerTitle}</p>
+        <p className="text-[#4a3f38] text-xs mt-0.5 leading-snug">{review.reviewerTitle}</p>
         {review.source && (
           <p className="text-[#c9a84c] text-[10px] mt-2 tracking-wide uppercase font-medium">
             — {review.source}
