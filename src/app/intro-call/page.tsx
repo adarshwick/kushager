@@ -94,7 +94,7 @@ export default function IntroCallPage() {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="bg-[#faf8f5] border border-[#e8e0d5] rounded-2xl p-8"
             >
-              <p className="text-[#a39589] text-xs tracking-widest uppercase mb-5">Who you&apos;ll meet</p>
+              <p className="text-[#78695f] text-xs tracking-widest uppercase mb-5">Who you&apos;ll meet</p>
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-[#9a6e1a]/10 flex items-center justify-center flex-shrink-0">
                   <span className="text-2xl text-[#9a6e1a]">♟</span>
@@ -126,7 +126,7 @@ export default function IntroCallPage() {
             className="mb-8 text-center"
           >
             <h2 className="text-2xl font-bold text-[#1c1917] mb-2">Choose a Time</h2>
-            <p className="text-[#a39589] text-sm">All times shown in your local timezone.</p>
+            <p className="text-[#78695f] text-sm">All times shown in your local timezone.</p>
           </motion.div>
 
           <motion.div

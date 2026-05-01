@@ -63,7 +63,7 @@ export default function ContactSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c1917] mb-4">
             Reach Out Directly
           </h2>
-          <p className="text-[#a39589] text-base max-w-md">
+          <p className="text-[#78695f] text-base max-w-md">
             Prefer to message first? Find Kushager on any of the channels below.
           </p>
         </motion.div>
@@ -94,14 +94,14 @@ export default function ContactSection() {
                 <span style={{ color: c.hoverColor }}>{c.icon}</span>
               </div>
               <div>
-                <p className="text-[#a39589] text-xs tracking-widest uppercase mb-1">
+                <p className="text-[#78695f] text-xs tracking-widest uppercase mb-1">
                   {c.label}
                 </p>
                 <p className="text-[#1c1917] text-sm font-semibold leading-snug">
                   {c.display}
                 </p>
                 {c.display !== c.value && (
-                  <p className="text-[#a39589] text-xs mt-0.5">{c.value}</p>
+                  <p className="text-[#78695f] text-xs mt-0.5">{c.value}</p>
                 )}
               </div>
             </motion.a>

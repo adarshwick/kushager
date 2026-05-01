@@ -202,7 +202,7 @@ function ModernChessCard({ course, index }: { course: SimpleCourse; index: numbe
         <p className="text-[#1c1917] text-sm font-medium leading-snug mb-1 group-hover:text-blue-600 transition-colors duration-200">
           {course.title}
         </p>
-        <p className="text-[#a39589] text-[11px]">{course.date}</p>
+        <p className="text-[#78695f] text-[11px]">{course.date}</p>
       </div>
       <ExternalLink
         size={13}
@@ -312,7 +312,7 @@ export default function PublicationsPage() {
                   <p className="text-[#1c1917] text-sm font-medium leading-snug mb-1 group-hover:text-green-700 transition-colors duration-200">
                     {course.title}
                   </p>
-                  <p className="text-[#a39589] text-[11px]">{course.date}</p>
+                  <p className="text-[#78695f] text-[11px]">{course.date}</p>
                 </div>
                 <ExternalLink
                   size={13}

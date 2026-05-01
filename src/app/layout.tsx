@@ -14,13 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kushager Krishnater | Elite Chess Coach",
+  title: "International Master Kushager Krishnater | Elite Chess Coach",
   description:
-    "Train with Kushager Krishnater — World's Youngest FIDE Trainer, Chief Openings Coach for Singapore National Team, and coach to Super Grandmasters including Arjun Erigaisi (World No.3) and Vidit Gujarathi. Book your free 15-minute intro call today.",
+    "Train with International Master Kushager Krishnater — World's Youngest FIDE Trainer, Chief Openings Coach for Singapore National Team, and coach to Super Grandmasters including Arjun Erigaisi (World No.3) and Vidit Gujarathi. Book your free 15-minute intro call today.",
   keywords: [
     "chess coach",
     "online chess coaching",
     "Kushager Krishnater",
+    "International Master Kushager Krishnater",
+    "IM Kushager Krishnater",
     "FIDE Trainer",
     "chess lessons",
     "chess improvement",
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
     "chess training India",
   ],
   openGraph: {
-    title: "Kushager Krishnater | Elite Chess Coach",
+    title: "International Master Kushager Krishnater | Elite Chess Coach",
     description:
       "World's Youngest FIDE Trainer. Coach to Super Grandmasters. Book your free 15-minute intro call.",
     type: "website",

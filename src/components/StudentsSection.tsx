@@ -104,7 +104,7 @@ export default function StudentsSection() {
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c1917] mb-4">
             Players I&apos;ve Worked With
           </h2>
-          <p className="text-[#a39589] text-base max-w-xl">
+          <p className="text-[#78695f] text-base max-w-xl">
             From World No. 3 to national champions — coaching and seconding
             experience across five years at every level of the game.
           </p>

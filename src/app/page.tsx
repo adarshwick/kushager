@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import VideoCarousel from "@/components/VideoCarousel";
 import AboutSection from "@/components/AboutSection";
 import CredentialsSection from "@/components/CredentialsSection";
+import MethodologySection from "@/components/MethodologySection";
 import StudentsSection from "@/components/StudentsSection";
 import CTASection from "@/components/CTASection";
 import ContactSection from "@/components/ContactSection";
@@ -14,10 +15,11 @@ export default function Home() {
     <main className="flex flex-col min-h-screen bg-[#faf8f5] text-[#1c1917]">
       <Navbar />
       <HeroSection />
-      <VideoCarousel />
       <AboutSection />
       <CredentialsSection />
+      <MethodologySection />
       <StudentsSection />
+      <VideoCarousel />
       <CTASection />
       <ContactSection />
       <Footer />

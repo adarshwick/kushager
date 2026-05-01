@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Star, Users, Calendar } from "lucide-react";
+import { BookOpen, Users } from "lucide-react";
 
 const pressBadges = [
   { label: "Chessable" },
@@ -12,9 +12,8 @@ const pressBadges = [
 ];
 
 const stats = [
-  { icon: Star,     value: "5+",       label: "Years Coaching" },
-  { icon: Users,    value: "100+",     label: "Students Trained" },
-  { icon: Calendar, value: "World #3", label: "Highest-Rated Student" },
+  { icon: BookOpen, value: "40+", label: "Published Chess Courses" },
+  { icon: Users,    value: "15+", label: "GMs Taught" },
 ];
 
 export default function HeroSection() {
@@ -52,7 +51,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5 }}
             className="flex flex-wrap items-center gap-2 mb-7"
           >
-            <span className="text-[#a39589] text-xs tracking-widest uppercase">As seen on</span>
+            <span className="text-[#78695f] text-xs tracking-widest uppercase">As seen on</span>
             {pressBadges.map((b) => (
               <span
                 key={b.label}
@@ -75,25 +74,41 @@ export default function HeroSection() {
             Grandmasters
           </motion.h1>
 
-          {/* Subtitle */}
-          <motion.p
+          {/* Tagline */}
+          <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-[#6b5c50] text-lg leading-relaxed mb-2"
+            className="border-l-2 border-[#9a6e1a] pl-4 mb-5"
           >
-            World&apos;s Youngest FIDE Trainer. Chief Openings Coach for Singapore&apos;s
-            National Team. Coach to Arjun Erigaisi (World No.&nbsp;3) and Women&apos;s
-            World Rapid Champion Koneru Humpy.
+            <p className="text-[#6b5c50] text-base leading-relaxed italic">
+              &ldquo;Science behind building World-Class Grandmasters, Adapted to your level&rdquo;
+            </p>
+          </motion.div>
+
+          {/* Bio */}
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="text-[#6b5c50] text-sm leading-relaxed mb-3"
+          >
+            I&apos;m IM Kushager Krishnater, the World&apos;s Youngest FIDE Trainer and Former
+            Chief Openings Coach for Singapore&apos;s National Team. I have worked with elite
+            grandmasters including Arjun Erigaisi, Vidit Gujrathi, Koneru Humpy, and
+            Abhimanyu Puranik — and I bring the same depth of preparation, structure, and
+            clarity to every student.
           </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.25 }}
-            className="text-[#a39589] text-sm mb-9"
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-[#78695f] text-sm mb-9"
           >
-            Beginner, club player, or ambitious junior — I build a plan around <em>you</em>.
+            Whether you are a beginner, club player, ambitious junior, or titled player,
+            your training plan is built around your games, your strengths, your weaknesses,
+            and your goals.
           </motion.p>
 
           {/* CTAs */}
@@ -129,7 +144,7 @@ export default function HeroSection() {
               <div key={label} className="flex flex-col gap-1">
                 <Icon size={15} className="text-[#9a6e1a]" strokeWidth={1.5} />
                 <span className="text-xl font-bold text-[#1c1917]">{value}</span>
-                <span className="text-[#a39589] text-[11px] tracking-widest uppercase">{label}</span>
+                <span className="text-[#78695f] text-[11px] tracking-widest uppercase">{label}</span>
               </div>
             ))}
           </motion.div>

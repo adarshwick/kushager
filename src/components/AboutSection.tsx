@@ -1,28 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, BookOpen, Globe, Target } from "lucide-react";
+import { Award, Target, Users, Zap } from "lucide-react";
 
 const pillars = [
   {
     icon: Target,
-    title: "Personalized Plans",
-    body: "Chess improvement is a personal journey. I craft a unique roadmap for each student — whether beginner, club player, or tournament competitor.",
+    title: "Personalized Training Plans",
+    body: "No two players improve in the same way. Your plan is built around your games, your goals, your schedule, and the recurring mistakes that are holding you back.",
   },
   {
-    icon: BookOpen,
+    icon: Users,
     title: "All Levels Welcome",
-    body: "From a 30-year-old who simply loves chess, to an ambitious junior, to a top GM — I have the experience to meet you exactly where you are.",
+    body: "From beginners and adult improvers to ambitious juniors and titled players, the coaching is adapted to your current strength and learning style.",
+  },
+  {
+    icon: Zap,
+    title: "Natural Style First",
+    body: "I help you develop your natural chess identity — attacking, positional, dynamic, or technical — while systematically fixing the gaps in your game.",
   },
   {
     icon: Award,
-    title: "Natural Style First",
-    body: "I help students nurture their natural playing style — attacking or positional — while systematically closing gaps in their game.",
-  },
-  {
-    icon: Globe,
-    title: "Global Reach",
-    body: "Based in India, I work with students and national teams across Asia and worldwide through online coaching.",
+    title: "Elite Experience, Practical Teaching",
+    body: "My work with grandmasters and national teams gives me elite-level insight, but every lesson is made practical, understandable, and useful for your level.",
   },
 ];
 
@@ -41,35 +41,37 @@ export default function AboutSection() {
           >
             <p className="text-[#9a6e1a] text-xs tracking-[0.2em] uppercase mb-3">About</p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#1c1917] mb-6 leading-tight">
-              A Coach Who Has Seen{" "}
-              <span className="text-gold-gradient">Every Level</span> of the Game
+              A Coach Who Understands{" "}
+              <span className="text-gold-gradient">Every Stage</span> of Chess Improvement
             </h2>
 
             <div className="space-y-5 text-[#6b5c50] leading-relaxed">
               <p>
-                I&apos;m Kushager Krishnater — a professional chess trainer from India with
-                five years of experience helping students at every level of the game.
-                I&apos;ve worked with complete beginners and with Super Grandmasters in the
-                world top 20.
+                I&apos;m IM Kushager Krishnater, a professional chess trainer from India
+                and the World&apos;s Youngest FIDE Trainer. Over the past five years, I
+                have worked with players across the full chess spectrum — from complete
+                beginners and club players to national champions, grandmasters, and some
+                of the strongest players in the world.
               </p>
               <p>
-                I serve as the{" "}
-                <strong className="text-[#1c1917]">Chief Openings Coach for Singapore&apos;s National Team</strong>,
-                and I hold the distinction of being the{" "}
-                <strong className="text-[#1c1917]">World&apos;s Youngest FIDE Trainer (FT)</strong>{" "}
-                — a title awarded by the international chess federation for exceptional
-                coaching credentials.
+                My work as{" "}
+                <strong className="text-[#1c1917]">Chief Openings Coach for Singapore&apos;s National Team</strong>{" "}
+                and my seconding experience with players such as{" "}
+                <strong className="text-[#1c1917]">Arjun Erigaisi, Vidit Gujrathi, Koneru Humpy, and Abhimanyu Puranik</strong>{" "}
+                have given me a close look at how elite chess preparation really works.
+                But strong coaching is not about copying what super-GMs do. It is about
+                knowing what each student needs at their current stage.
               </p>
               <p>
-                My seconding and training experience includes GM Arjun Erigaisi
-                (World No.&nbsp;3, Fide 2798), GM Vidit Gujarathi (World No.&nbsp;16), and
-                Women&apos;s World Rapid Champion GM Koneru Humpy — giving me deep insight
-                into what it takes to compete at the absolute peak of the game.
+                That is the foundation of my coaching. I study your games, understand
+                your natural style, identify the patterns behind your mistakes, and build
+                a practical training plan around you. Some students need sharper
+                calculation. Some need better openings. Some need structure in the
+                middlegame. Some need confidence, discipline, or a clearer way to study.
               </p>
               <p>
-                Discussing chess with players of all levels has given me a rare
-                understanding of how to tailor training for different stages of
-                development. My goal is always the same: a plan that fits <em>you</em>.
+                My goal is simple: to help you make better decisions at the board and
+                become a stronger, more complete chess player.
               </p>
             </div>
           </motion.div>
@@ -91,7 +93,7 @@ export default function AboutSection() {
                     <Icon size={20} className="text-[#9a6e1a]" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-[#1c1917] font-semibold text-sm mb-2">{pillar.title}</h3>
-                  <p className="text-[#a39589] text-sm leading-relaxed">{pillar.body}</p>
+                  <p className="text-[#78695f] text-sm leading-relaxed">{pillar.body}</p>
                 </motion.div>
               );
             })}

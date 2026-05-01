@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#1c1917"/>
+  <!-- Pawn head -->
+  <circle cx="16" cy="9" r="5" fill="#c9a84c"/>
+  <!-- Pawn body -->
+  <path d="M13.5 13.5 C12.5 17 11 20.5 9 25 H23 C21 20.5 19.5 17 18.5 13.5 Z" fill="#c9a84c"/>
+  <!-- Pawn base -->
+  <rect x="7" y="24.5" width="18" height="4" rx="2" fill="#c9a84c"/>
+</svg>

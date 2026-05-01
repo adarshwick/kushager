@@ -1,64 +1,50 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Flag, BookOpen, Newspaper } from "lucide-react";
+import { Trophy, Flag, BookOpen, Newspaper, Star } from "lucide-react";
 
 const credentials = [
   {
     icon: Trophy,
     category: "Title",
-    title: "World's Youngest FIDE Trainer (FT)",
+    title: "World's Youngest FIDE Trainer",
     detail:
-      "Certified by FIDE — the international chess federation — as a fully qualified trainer at a record-breaking age.",
+      "Certified by FIDE as a professional trainer at a record-breaking age, reflecting exceptional coaching credentials and chess understanding.",
   },
   {
     icon: Flag,
     category: "National Role",
-    title: "Chief Openings Coach — Singapore National Team",
+    title: "Chief Openings Coach, Singapore National Team",
     detail:
-      "Responsible for opening preparation at the highest national level for Singapore's chess squad.",
+      "Responsible for high-level opening preparation and training support for Singapore's national chess squad.",
   },
   {
-    icon: Trophy,
+    icon: Star,
     category: "Seconding",
-    title: "GM Arjun Erigaisi — World No. 3, Fide 2798",
+    title: "Second to World-Class Grandmasters",
     detail:
-      "Worked as second and openings coach to one of the world's strongest active players.",
-  },
-  {
-    icon: Trophy,
-    category: "Seconding",
-    title: "GM Vidit Gujarathi — World No. 16, Fide 2737",
-    detail:
-      "Preparation and seconding work for one of India's leading grandmasters.",
-  },
-  {
-    icon: Trophy,
-    category: "Seconding",
-    title: "GM Koneru Humpy — Women's World Rapid Champion",
-    detail:
-      "Training the reigning Women's World Rapid Champion and global chess icon.",
-  },
-  {
-    icon: Trophy,
-    category: "Seconding",
-    title: "GM Abhimanyu Puranik — Fide 2652",
-    detail:
-      "Openings and preparation work with one of India's strongest grandmasters.",
+      "Worked with elite players including Arjun Erigaisi, Vidit Gujrathi, Koneru Humpy, and Abhimanyu Puranik, helping with preparation, opening ideas, and competitive training.",
   },
   {
     icon: BookOpen,
-    category: "Publication",
+    category: "Chessable",
     title: "Chessable Course Author",
     detail:
-      "Published opening courses on Chessable, the world's leading chess learning platform.",
+      "Published opening courses on Chessable, one of the world's leading chess learning platforms, bringing structured chess education to a global audience.",
+  },
+  {
+    icon: BookOpen,
+    category: "Modern-Chess",
+    title: "Modern-Chess Author",
+    detail:
+      "Created advanced opening and middlegame material for ambitious players looking to improve their practical understanding.",
   },
   {
     icon: Newspaper,
     category: "Media",
     title: "Featured in Major Publications",
     detail:
-      "Coverage in Modern-Chess, The Indian Express, and Times of India, among others.",
+      "Recognized across major chess and media platforms including Chessable, Modern-Chess, The Indian Express, and Times of India.",
   },
 ];
 
@@ -66,8 +52,9 @@ const CARD_COLORS: Record<string, string> = {
   Title: "#9a6e1a",
   "National Role": "#2563eb",
   Seconding: "#7c3aed",
-  Publication: "#16a34a",
-  Media: "#ea580c",
+  Chessable: "#16a34a",
+  "Modern-Chess": "#ea580c",
+  Media: "#0ea5e9",
 };
 
 export default function CredentialsSection() {
@@ -84,16 +71,19 @@ export default function CredentialsSection() {
           <p className="text-[#9a6e1a] text-xs tracking-[0.2em] uppercase mb-3">
             Credentials
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1c1917] mb-4">
-            Elite Experience at Every Level
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1c1917] mb-4 max-w-2xl leading-tight">
+            From National Teams to Club Players —{" "}
+            <span className="text-gold-gradient">Coaching That Meets You Where You Are</span>
           </h2>
-          <p className="text-[#a39589] text-base max-w-xl">
-            From world-class seconding to national team roles to published
-            courses — a track record built at the highest levels of chess.
+          <p className="text-[#78695f] text-base max-w-2xl leading-relaxed">
+            Kushager&apos;s coaching background combines official FIDE recognition, national
+            team preparation, published chess education, and direct work with world-class
+            players. This gives his students access to a rare mix of opening depth,
+            practical training structure, and high-level chess understanding.
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {credentials.map((cred, i) => {
             const Icon = cred.icon;
             const accentColor = CARD_COLORS[cred.category] ?? "#9a6e1a";
@@ -103,7 +93,7 @@ export default function CredentialsSection() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: (i % 4) * 0.08 }}
+                transition={{ duration: 0.5, delay: (i % 3) * 0.08 }}
                 className="bg-white border border-[#e8e0d5] rounded-xl p-5 hover:shadow-md transition-all duration-300"
               >
                 <div className="flex items-center gap-2 mb-4">
@@ -123,7 +113,7 @@ export default function CredentialsSection() {
                 <h3 className="text-[#1c1917] text-sm font-semibold mb-2 leading-snug">
                   {cred.title}
                 </h3>
-                <p className="text-[#a39589] text-xs leading-relaxed">
+                <p className="text-[#78695f] text-xs leading-relaxed">
                   {cred.detail}
                 </p>
               </motion.div>

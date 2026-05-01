@@ -143,7 +143,7 @@ function VideoCard({ review, index, onClick }: { review: VideoReview; index: num
       <div className="p-5 flex flex-col flex-1">
         <div className="flex-1">
           <p className="text-[#1c1917] font-bold text-sm leading-snug">{review.reviewerName}</p>
-          <p className="text-[#a39589] text-xs mt-0.5 leading-snug">{review.reviewerTitle}</p>
+          <p className="text-[#78695f] text-xs mt-0.5 leading-snug">{review.reviewerTitle}</p>
         </div>
         <p className="text-[#9a6e1a] text-xs mt-4 flex items-center gap-1.5 font-medium">
           <Play size={9} fill="currentColor" className="flex-shrink-0" />
@@ -181,7 +181,7 @@ function TextCard({ review, index }: { review: TextReview; index: number }) {
       <div className="mt-auto">
         <div className="w-8 h-px bg-[#9a6e1a]/30 mb-3" />
         <p className="text-[#1c1917] text-sm font-semibold leading-snug">{review.reviewerName}</p>
-        <p className="text-[#a39589] text-xs mt-0.5 leading-snug">{review.reviewerTitle}</p>
+        <p className="text-[#78695f] text-xs mt-0.5 leading-snug">{review.reviewerTitle}</p>
         {review.source && (
           <p className="text-[#c9a84c] text-[10px] mt-2 tracking-wide uppercase font-medium">
             — {review.source}
@@ -231,11 +231,11 @@ function WistiaModal({ review, onClose }: { review: VideoReview; onClose: () => 
             <div className="p-4 flex items-start justify-between gap-4">
               <div>
                 <p className="text-white font-semibold text-sm">{review.reviewerName}</p>
-                <p className="text-[#6b6b6b] text-xs mt-0.5">{review.reviewerTitle}</p>
+                <p className="text-[#8a8a8a] text-xs mt-0.5">{review.reviewerTitle}</p>
               </div>
               <Dialog.Close asChild>
                 <button
-                  className="flex-shrink-0 w-9 h-9 rounded-full border border-[#2a2a2a] hover:border-[#9a6e1a] flex items-center justify-center text-[#6b6b6b] hover:text-[#9a6e1a] transition-all"
+                  className="flex-shrink-0 w-9 h-9 rounded-full border border-[#2a2a2a] hover:border-[#9a6e1a] flex items-center justify-center text-[#8a8a8a] hover:text-[#9a6e1a] transition-all"
                   aria-label="Close"
                 >
                   <X size={16} />
@@ -272,7 +272,7 @@ export default function VideoCarousel() {
         >
           <p className="text-[#9a6e1a] text-xs tracking-[0.2em] uppercase mb-3">What GMs Say</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1c1917] mb-4">Hear It From the Players</h2>
-          <p className="text-[#a39589] text-base max-w-xl">
+          <p className="text-[#78695f] text-base max-w-xl">
             Grandmasters, World Champions, and national champions share their
             experience training and working with Kushager.
           </p>

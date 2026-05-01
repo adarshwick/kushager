@@ -67,8 +67,8 @@ export default function CTASection() {
 
           {/* Duration badge */}
           <div className="flex items-center justify-center gap-1.5 mb-8">
-            <Clock size={14} className="text-[#a39589]" />
-            <span className="text-[#a39589] text-sm">15 minutes · Online · Free</span>
+            <Clock size={14} className="text-[#78695f]" />
+            <span className="text-[#78695f] text-sm">15 minutes · Online · Free</span>
           </div>
 
           {/* CTA button */}
@@ -80,7 +80,7 @@ export default function CTASection() {
             <span className="text-xl">→</span>
           </a>
 
-          <p className="text-[#a39589] text-xs mt-5">
+          <p className="text-[#78695f] text-xs mt-5">
             Pick a time that works for you — free &amp; no commitment
           </p>
         </motion.div>
