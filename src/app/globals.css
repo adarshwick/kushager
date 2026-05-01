@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: #faf8f5;
+  --color-foreground: #1c1917;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-gold: #9a6e1a;
+  --color-gold-light: #c9a84c;
+  --color-gold-dark: #7a5510;
+  --color-surface: #ffffff;
+  --color-surface-2: #f5f0e8;
+  --color-border: #e8e0d5;
+  --color-muted: #a39589;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #faf8f5;
+  --foreground: #1c1917;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Chess board background pattern */
+.chess-bg {
+  background-image:
+    linear-gradient(45deg, rgba(154,110,26,0.05) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(154,110,26,0.05) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(154,110,26,0.05) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(154,110,26,0.05) 75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #9a6e1a 0%, #c9a84c 50%, #9a6e1a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f0e8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a84c55;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9a6e1a99;
+}
+
+/* Video carousel scrollbar hide */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
