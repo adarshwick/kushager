@@ -17,13 +17,6 @@ const navGroups: NavGroup[] = [
     ],
   },
   {
-    label: "Coaching",
-    items: [
-      { label: "Methodology", desc: "How every session is structured and why it works", href: "#methodology" },
-      { label: "Publications", desc: "Courses on Chessable and Modern-Chess", href: "/publications" },
-    ],
-  },
-  {
     label: "Results",
     items: [
       { label: "Students", desc: "Milestones, titles, and rating gains", href: "#students" },
@@ -137,6 +130,24 @@ export default function Navbar() {
           ))}
 
           <a
+            href={`${p}#methodology`}
+            className="text-[#6b5c50] hover:text-[#9a6e1a] text-sm tracking-wide px-3 py-2 rounded-lg transition-colors duration-200"
+          >
+            Methodology
+          </a>
+
+          <a
+            href="/publications"
+            className={`text-sm tracking-wide px-3 py-2 rounded-lg transition-colors duration-200 ${
+              pathname === "/publications"
+                ? "text-[#9a6e1a] font-medium"
+                : "text-[#6b5c50] hover:text-[#9a6e1a]"
+            }`}
+          >
+            Publications
+          </a>
+
+          <a
             href={`${p}#get-in-touch`}
             className="text-[#6b5c50] hover:text-[#9a6e1a] text-sm tracking-wide px-3 py-2 rounded-lg transition-colors duration-200"
           >
@@ -213,6 +224,26 @@ export default function Navbar() {
                   </AnimatePresence>
                 </div>
               ))}
+
+              <a
+                href={`${p}#methodology`}
+                onClick={() => setMenuOpen(false)}
+                className="text-[#6b5c50] text-sm tracking-wide py-3 border-b border-[#f0ebe3]"
+              >
+                Methodology
+              </a>
+
+              <a
+                href="/publications"
+                onClick={() => setMenuOpen(false)}
+                className={`text-sm tracking-wide py-3 border-b border-[#f0ebe3] ${
+                  pathname === "/publications"
+                    ? "text-[#9a6e1a] font-medium"
+                    : "text-[#6b5c50]"
+                }`}
+              >
+                Publications
+              </a>
 
               <a
                 href={`${p}#get-in-touch`}

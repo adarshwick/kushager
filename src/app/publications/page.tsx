@@ -158,6 +158,7 @@ function ChessableCard({ course, index }: { course: ChessableCourse; index: numb
           src={course.cover}
           alt={course.title}
           fill
+          unoptimized
           className="object-contain p-4 transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
